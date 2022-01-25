@@ -107,3 +107,5 @@ if __name__ == '__main__':
     rr.print()
     ss = LinkedList()
     ss.insert_values(["banana", "mango", "grapes", "orange"])
+    ss.insert_at(2,"kiwi")
+    ss.remove_at(3)
