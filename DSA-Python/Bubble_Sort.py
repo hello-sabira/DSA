@@ -8,9 +8,9 @@ def bubble_sort(elements):
         for j in range(size-1-i):  # when loop already run a few times, last portion is already sorted so ignore it, don't re-sort
             if elements[j] > elements[j+1]:  # if first element is greater than second one
                 """
-                tmp = elements[j]  # nooby way of swapping in other languages
-                elements[j] = elements[j+1]
-                elements[j+1] = tmp
+                tmp = element_list[j]  # nooby way of swapping in other languages
+                element_list[j] = element_list[j+1]
+                element_list[j+1] = tmp
                 """
                 elements[j], elements[j + 1] = elements[j + 1], elements[j]  # the mighty python way of swapping in single line
                 swapped = True

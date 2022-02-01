@@ -42,7 +42,7 @@ class ArrayQueue:
         old = self.data                    # keeping track of our existing list
         self.data = [None] * cap           # allocate list with new capacity
         walk = self.front
-        for i in range(self.size):         # only considering existing elements
+        for i in range(self.size):         # only considering existing element_list
             self.data[i] = old[walk]       # intentionally shift indices
             walk = (1 + walk) % len(old)   # use old size as modulus
         self.front = 0                     # front has been realigned
